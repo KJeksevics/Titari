@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+        <head>  
+             <script>
+                 let mainigais;
+                 let rezultats;
+                 const constants=6;
+                mainigais=7;
+                rezultats=mainigais+constants;
+                console.log(rezultats);
+               
+            </script>
+        </head>
+        <body>
+            <p id="par1">Jauns paragrāfs</p>
+            <script>
+                console.log(document.getElementById("par1").innerHTML);
+                document.getElementById("par1").innerHTML="pavisam kas cits";
+                document.getElementById("par1").innerHTML+=rezultats;
+
+                for(let skaititajs=1;skaititajs<=150;skaititajs++){
+
+                    let jaunais = document.createElement("p");
+                    jaunais.id="par2";
+                    jaunais.innerHTML="cits paragrafs"+skaititajs;
+                    document.body.appendChild(jaunais);
+                }
+            </script>
+        </body>
+</html>

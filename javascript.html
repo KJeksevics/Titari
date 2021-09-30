@@ -6,12 +6,28 @@
                 let r;
                 let text;
 
+                text = "idklol"
                 const c=6;
                 k=7;;
-                result=k+c+text;
-                console.log(result);
+                result=k+text+c+"random text";
+                
+                
             </script>
         </head>
-        <body>
+        <body id="par1">
+            <p id="par1">Jauns paragrāfs</p>
+            <script>    
+            console.log(document.getElementById("par1").innerHTML);
+            document.getElementById("par1").innerHTML="pavisam kas cits"
+            document.getElementById("par1").innerHTML += result
+
+            for(let skaititajs=1;1<150;skaititajs++) {
+            let jaunais = document.createElement("p")
+            jaunais.id= "par2"
+            jaunais.innerHTML="cits paragrāfs"
+            document.body.appendChild(jaunais)
+            }
+
+            </script>
         </body>
 </html>
